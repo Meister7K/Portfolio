@@ -1,5 +1,7 @@
 .header{
-    
+    position: sticky;
+    //background: transparentize($color: #6e6e6e, $amount: .8);
+    background: linear-gradient(to bottom, rgb(145, 145, 145) 0%, rgba(145, 145, 145, .7) 50%, rgba(145, 145, 145, 0) 100%);
     margin-bottom: 20px;
     top:0;
     display: flex;

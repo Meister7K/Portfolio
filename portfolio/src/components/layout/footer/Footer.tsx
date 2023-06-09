@@ -8,7 +8,7 @@ function Footer() {
 }
   return (
     <>
-    <ul>
+    <ul className='footer'>
             <li><a href={links.github} target='_blank'>Github</a></li>
             <li><a href={links.linkedin} target='_blank'>LinkedIn</a></li>
         </ul>

@@ -1,7 +1,8 @@
 .list {
-  li {
-    list-style: none;
-  }
+  background: transparentize($color: #6e6e6e, $amount: .5);
+  margin:0 auto;
+  max-width: 1080px;
+ 
   span{
     position: absolute;
     color: red;
@@ -13,7 +14,12 @@
 }
   img {
     box-shadow: 3px 3px 3px black;
-    width: 50dvw;
+    width: 50%;
     height: auto;
   }
+}
+.list-item{
+  background: transparentize($color: #6e6e6e, $amount: .5);
+  margin:20px auto;
+  max-width: 720px;
 }
