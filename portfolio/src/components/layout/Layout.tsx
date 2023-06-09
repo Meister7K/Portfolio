@@ -25,13 +25,16 @@ function Layout(){
   
 
     return(
-        <>
-        <Cursor/>
+    <>
+    <Cursor/>
+    <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+    {renderPage()}
     <div className="layout">
-        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-        {renderPage()}
-        <Footer/>
-    </div></>
+        
+        
+    </div>
+    <Footer/>
+    </>
         
     )
 }

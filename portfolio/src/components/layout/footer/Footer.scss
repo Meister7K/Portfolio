@@ -1,5 +1,8 @@
 .footer{
       //background: transparentize($color: #6e6e6e, $amount: .8);
       background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .7) 50%, rgba(0, 0, 0, 0) 100%);
-      top: 100dvh;
+      margin: 0 auto;
+      top: 100%;
+      width: 100dvw;
+      position: static;
 }
