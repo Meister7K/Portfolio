@@ -16,9 +16,9 @@ function About() {
 };
 
   return (
-    <>
-      <div className='about'>
-            <h1>About Me</h1>
+    <div className='about'>
+      <h1>About Me</h1>
+      <div className='about-set'>
             <img className='headshot' src={headshot} alt=''/>
             <p className='intro'>{profile.intro}</p>
             <br/>
@@ -34,7 +34,7 @@ function About() {
                 
             </ul>
         </div>
-    </>
+    </div>
   )
 }
 

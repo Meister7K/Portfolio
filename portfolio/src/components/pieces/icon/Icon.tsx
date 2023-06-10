@@ -9,7 +9,7 @@ function Icon(props:any){
     const [hovered, hover] = useState(false);
     const [clicked, click] = useState(false);
 
-    useFrame((state, delta) => (ref.current.rotation.x += 0.02));
+    useFrame((_state, _delta) => (ref.current.rotation.x += 0.02));
 
     return(
         <>
@@ -17,9 +17,9 @@ function Icon(props:any){
         {...props}
         ref={ref}
         scale={clicked ? 1.3 : 1}
-        onClick={(event) => click(!clicked)}
-        onPointerOver={(event) => hover(true)}
-        onPointerOut={(event) => hover(false)}
+        onClick={(_event) => click(!clicked)}
+        onPointerOver={(_event) => hover(true)}
+        onPointerOut={(_event) => hover(false)}
         >
         <cylinderGeometry args={[2,2,.5]} />
         <meshStandardMaterial
