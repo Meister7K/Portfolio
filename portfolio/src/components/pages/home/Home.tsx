@@ -1,4 +1,6 @@
 import './Home.scss'
+import Icon from '../../pieces/icon/Icon'
+import {Canvas} from '@react-three/fiber'
 
 function Home() {
   return (
@@ -11,6 +13,11 @@ function Home() {
         <h1 className='port'>Welcome to my portfolio</h1>
         <br/>
       </div>
+      <Canvas>
+        <pointLight position={[10,10,10]}/>
+        <Icon/>
+      </Canvas>
+      
     </div>
     
     </>
